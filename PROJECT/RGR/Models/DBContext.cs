@@ -65,6 +65,10 @@ namespace RGR.Models
 
             sql_con = new SQLiteConnection("Data Source=darts.db;Mode=ReadWrite");
             sql_con.Open();
+            if (sql_con.State != ConnectionState.Open)
+            {
+                throw new Exception("Connection failed!");
+            }
 
             getTables();
         }
