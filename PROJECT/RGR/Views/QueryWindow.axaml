@@ -29,9 +29,9 @@
       </Border>
     </Grid>
     
-    <Border Grid.Column="1" BorderThickness="2" BorderBrush="Black">
-      <Grid RowDefinitions="60, *" >
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="10" HorizontalAlignment="Center">
+    <Border Grid.Column="1" BorderThickness="0.5" BorderBrush="Black">
+      <Grid RowDefinitions="30, *" >
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="1" HorizontalAlignment="Center">
           <TextBox Watermark="Query name" Text="{Binding TargetQuery.QueryName}" Height="35" Width="150" Background="White"/>
           <Button Content="Delete" />
           <Button Content="Join" Click="JoinQuery" />
